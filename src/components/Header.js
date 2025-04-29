@@ -24,7 +24,7 @@ export default function Header() {
               <Col
                 xl={2}
                 lg={2}
-                md={3}
+                md={2}
                 sm={12}
                 xs={12}
                 className="align-content-center"
@@ -38,9 +38,9 @@ export default function Header() {
               <Col
                 xl={8}
                 lg={8}
-                md={9}
-                sm={0}
-                xs={0}
+                md={8}
+                sm={12}
+                xs={12}
                 className="mnu align-content-center"
               >
                 <ul className="list-unstyled d-flex justify-content-center gap-4 m-0">
@@ -84,9 +84,9 @@ export default function Header() {
               <Col
                 xl={2}
                 lg={2}
-                md={0}
-                sm={0}
-                xs={0}
+                md={2}
+                sm={12}
+                xs={12}
                 className="align-content-center"
               >
                 <ul className="list-unstyled d-flex justify-content-end gap-4 m-0">
