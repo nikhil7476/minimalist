@@ -19,7 +19,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,8 +35,131 @@ a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1200px !important;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+/*Header Styles*/
+.hdr {
+  color: #000000;
+}
+
+.hdr svg {
+  font-size: 20px;
+}
+
+.hdr a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.hdr .mnu a {
+  background-image: linear-gradient(transparent calc(100% - 1px), #000 1px);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.25s;
+  display: inline !important;
+  padding-bottom: 3px;
+  background-position: unset !important;
+  max-width: max-content;
+}
+
+.hdr .mnu a:hover {
+  background-size: 100% 100%;
+}
+
+.hdr h2 a {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.2em;
+}
+
+.hdrSec1 {
+  background-color: #fb6900;
+  padding: 10px 0px;
+}
+
+.hdrSec2 {
+  padding: 30px 0px;
+  position: relative;
+}
+
+.hdrSec2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: rgba(0, 0, 0, 0.15);
+  transition: all 175ms linear;
+}
+/*Footer Styles*/
+
+.ftr {
+  color: #d9d8d7;
+  background-color: #1b1a1a;
+}
+
+.ftr a {
+  color: #d9d8d7;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.ftr a:hover {
+  color: #ffffff;
+}
+
+.ftr h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.ftr p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.ftr svg {
+  font-size: 25px;
+}
+
+.ftrSec1 {
+  padding: 80px 0px;
+  border-bottom: 1px solid #d9d8d726;
+}
+
+.ftrSec2 {
+  padding: 25px 0px;
+}
+
+.ftrMnu a {
+  background-image: linear-gradient(transparent calc(100% - 1px), #ffffff 1px);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.25s;
+  display: inline !important;
+  padding-bottom: 3px;
+  background-position: unset !important;
+  max-width: max-content;
+}
+
+.ftrMnu a:hover {
+  background-size: 100% 100%;
 }
